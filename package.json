@@ -1,7 +1,7 @@
 {
   "name": "ff-cli",
   "description": "Fanfiction Database CLI",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "author": "Joe Shamoe @jojotastic777",
   "bin": {
     "ff-cli": "./bin/run"

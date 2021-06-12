@@ -45,7 +45,7 @@ OPTIONS
   -h, --help  show CLI help
 ```
 
-_See code: [src/commands/add.ts](https://github.com/jojotastic777/ff-cli/blob/v0.0.0/src/commands/add.ts)_
+_See code: [src/commands/add.ts](https://github.com/jojotastic777/ff-cli/blob/v0.1.0/src/commands/add.ts)_
 
 ## `ff-cli help [COMMAND]`
 
@@ -78,7 +78,7 @@ OPTIONS
   --pageSize=pageSize  [default: 20]
 ```
 
-_See code: [src/commands/list.ts](https://github.com/jojotastic777/ff-cli/blob/v0.0.0/src/commands/list.ts)_
+_See code: [src/commands/list.ts](https://github.com/jojotastic777/ff-cli/blob/v0.1.0/src/commands/list.ts)_
 
 ## `ff-cli rm ID`
 
@@ -92,5 +92,5 @@ OPTIONS
   -h, --help  show CLI help
 ```
 
-_See code: [src/commands/rm.ts](https://github.com/jojotastic777/ff-cli/blob/v0.0.0/src/commands/rm.ts)_
+_See code: [src/commands/rm.ts](https://github.com/jojotastic777/ff-cli/blob/v0.1.0/src/commands/rm.ts)_
 <!-- commandsstop -->
