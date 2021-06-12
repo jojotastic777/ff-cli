@@ -1,18 +1,62 @@
 {
   "name": "ff-cli",
-  "version": "1.0.0",
-  "main": "index.js",
-  "license": "MIT",
+  "description": "Fanfiction Database CLI",
+  "version": "0.0.0",
+  "author": "Joe Shamoe @jojotastic777",
+  "bin": {
+    "ff-cli": "./bin/run"
+  },
+  "bugs": "https://github.com/jojotastic777/ff-cli/issues",
   "dependencies": {
-    "@types/cheerio": "^0.22.29",
-    "@types/mongodb": "^3.6.17",
+    "@oclif/command": "^1",
+    "@oclif/config": "^1",
+    "@oclif/plugin-help": "^3",
     "axios": "^0.21.1",
     "chalk": "^4.1.1",
     "cheerio": "^1.0.0-rc.10",
     "mongodb": "^3.6.9",
-    "yargs": "^17.0.1"
+    "tslib": "^1"
   },
   "devDependencies": {
-    "@types/yargs": "^17.0.0"
-  }
+    "@oclif/dev-cli": "^1",
+    "@types/mongodb": "^3.6.17",
+    "@types/node": "^10",
+    "eslint": "^5.13",
+    "eslint-config-oclif": "^3.1",
+    "eslint-config-oclif-typescript": "^0.1",
+    "globby": "^10",
+    "ts-node": "^8",
+    "typescript": "^3.3"
+  },
+  "engines": {
+    "node": ">=8.0.0"
+  },
+  "files": [
+    "/bin",
+    "/lib",
+    "/npm-shrinkwrap.json",
+    "/oclif.manifest.json"
+  ],
+  "homepage": "https://github.com/jojotastic777/ff-cli",
+  "keywords": [
+    "oclif"
+  ],
+  "license": "MIT",
+  "main": "lib/index.js",
+  "oclif": {
+    "commands": "./lib/commands",
+    "bin": "ff-cli",
+    "plugins": [
+      "@oclif/plugin-help"
+    ]
+  },
+  "repository": "jojotastic777/ff-cli",
+  "scripts": {
+    "postpack": "rm -f oclif.manifest.json",
+    "posttest": "eslint . --ext .ts --config .eslintrc",
+    "prepack": "rm -rf lib && tsc -b && oclif-dev manifest && oclif-dev readme",
+    "test": "echo NO TESTS",
+    "version": "oclif-dev readme && git add README.md"
+  },
+  "types": "lib/index.d.ts"
 }

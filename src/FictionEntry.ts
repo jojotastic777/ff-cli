@@ -12,7 +12,7 @@ type source = string
 export interface FictionEntry {
     title: title
     author: author
-    fandom: fandom
+    fandom: fandom[]
     rating: rating
     characters: character[]
     relationships: relationship[]
