@@ -1,5 +1,5 @@
 import { FictionEntry, FictionEntryDatabase } from "./FictionEntry";
-import chalk from "chalk"
+import * as chalk from "chalk"
 
 function checkFicAlive(fic: FictionEntry): string {
     if (fic.complete) { return chalk.whiteBright("Completed") }
@@ -11,7 +11,7 @@ function checkFicAlive(fic: FictionEntry): string {
     if (months <= 7)  { return chalk.white("Probably Alive") }
     if (months <= 18) { return chalk.gray("Possibly Dead") }
     if (years <= 3)   { return chalk.blackBright("Almost Certainly Dead") }
-    return chalk.black(`${chalk.strikethrough("Dead")} Sleeping`)
+    return chalk.bgWhite.black(`Sleeping`)
 }
 
 function renderDate(date: Date): string {
@@ -22,11 +22,11 @@ export default function renderFictionEntry(fic: FictionEntryDatabase): string {
     return [
         chalk`{dim >} ${chalk.whiteBright(fic.title)} {dim by:} ${chalk.whiteBright(fic.author)} {dim (ID: ${fic._id ?? "test"})}`,
         `    ${chalk.dim("Rating:")} ${chalk.whiteBright(fic.rating)}`,
-        `    ${chalk.dim("Fandom:")} ${chalk.whiteBright(fic.fandom)}`,
+        `    ${chalk.dim("Fandom:")} ${fic.fandom.map(a => chalk.whiteBright(a)).join(chalk.dim(", "))}`,
         `    ${chalk.dim("Relationships:")} ${fic.relationships.map(a => chalk.whiteBright(a.join("/"))).join(chalk.dim(", "))}`,
         `    ${chalk.dim("Characters:")} ${fic.characters.map(a => chalk.whiteBright(a)).join(chalk.dim(", "))}`,
         `    ${chalk.dim("Tags:")} ${fic.tags.map(a => chalk.whiteBright(a)).join(chalk.dim(", "))}`,
         chalk`    {dim Words:} {whiteBright ${fic.wordcount}} {dim Published:} {whiteBright ${renderDate(fic.published)}} {dim Updated:} {whiteBright ${renderDate(fic.updated)}} {dim Status:} ${checkFicAlive(fic)}`,
-        `    ${chalk.dim("Links:")} ${fic.sources.map((e, i) => i === 0 ? e : `           ${chalk.whiteBright(e)}`)}`
+        `    ${chalk.dim("Links:")} ${fic.sources.map((e, i) => i === 0 ? chalk.blueBright(e) : `           ${chalk.blueBright(e)}`).join("\n")}`
     ].join("\n")
 }

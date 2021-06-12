@@ -1,1 +1,11 @@
+<<<<<<< HEAD
+=======
+*-debug.log
+*-error.log
+/.nyc_output
+/dist
+/lib
+/package-lock.json
+/tmp
+>>>>>>> oclif
 node_modules
