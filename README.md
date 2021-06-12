@@ -32,7 +32,6 @@ USAGE
 * [`ff-cli help [COMMAND]`](#ff-cli-help-command)
 * [`ff-cli list PAGE`](#ff-cli-list-page)
 * [`ff-cli rm ID`](#ff-cli-rm-id)
-* [`ff-cli test [FILE]`](#ff-cli-test-file)
 
 ## `ff-cli add URL`
 
