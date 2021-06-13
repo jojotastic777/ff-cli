@@ -116,12 +116,10 @@ describe the command here
 
 ```
 USAGE
-  $ ff-cli search [FILE]
+  $ ff-cli search [QUERY] [PAGE]
 
 OPTIONS
-  -f, --force
   -h, --help       show CLI help
-  -n, --name=name  name to print
 ```
 
 _See code: [src/commands/search.ts](https://github.com/jojotastic777/ff-cli/blob/v0.1.0/src/commands/search.ts)_
