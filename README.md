@@ -110,7 +110,7 @@ OPTIONS
 
 _See code: [src/commands/rm.ts](https://github.com/jojotastic777/ff-cli/blob/v0.1.0/src/commands/rm.ts)_
 
-## `ff-cli search [FILE]`
+## `ff-cli search [QUERY] [PAGE]`
 
 describe the command here
 
