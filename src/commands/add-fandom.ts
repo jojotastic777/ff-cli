@@ -4,7 +4,7 @@ import * as chalk from 'chalk'
 import Base from '../Base'
 
 export default class AddFandom extends Base {
-  static description = 'describe the command here'
+  static description = 'Add a fandom to a specified fic\'s fandoms list.'
 
   static flags = {
     help: flags.help({char: 'h'}),

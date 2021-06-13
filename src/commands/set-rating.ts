@@ -4,7 +4,7 @@ import * as chalk from 'chalk'
 import Base from '../Base'
 
 export default class SetRating extends Base {
-  static description = 'describe the command here'
+  static description = 'Set a fic\'s rating.'
 
   static flags = {
     help: flags.help({char: 'h'}),

@@ -4,7 +4,7 @@ import { MongoClient, ObjectID } from 'mongodb'
 import Base from '../Base'
 
 export default class Rm extends Base {
-  static description = 'describe the command here'
+  static description = 'Remove a specific fic from the database by it\'s id.'
 
   static flags = {
     help: flags.help({char: 'h'})

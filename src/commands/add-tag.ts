@@ -4,7 +4,7 @@ import * as chalk from 'chalk'
 import Base from '../Base'
 
 export default class AddTag extends Base {
-  static description = 'describe the command here'
+  static description = 'Add a tag to a specified fic\'s tags list.'
 
   static flags = {
     help: flags.help({char: 'h'}),

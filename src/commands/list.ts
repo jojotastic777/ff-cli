@@ -6,7 +6,7 @@ import { FictionEntryDatabase } from '../FictionEntry'
 import renderFictionEntry from '../renderFictionEntry'
 
 export default class List extends Base {
-  static description = 'describe the command here'
+  static description = 'List all the fics in the database. Paginated by default.'
 
   static flags = {
     help: flags.help({char: 'h'}),

@@ -6,7 +6,7 @@ import { FictionEntryDatabase } from '../FictionEntry'
 import renderFictionEntry from '../renderFictionEntry'
 
 export default class Get extends Base {
-  static description = 'describe the command here'
+  static description = 'Get a specific fic from the database by it\'s id.'
 
   static flags = {
     help: flags.help({char: 'h'}),

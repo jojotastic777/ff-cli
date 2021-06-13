@@ -4,7 +4,7 @@ import * as chalk from 'chalk'
 import Base from '../Base'
 
 export default class AddRelationship extends Base {
-  static description = 'describe the command here'
+  static description = 'Add a relationship to a specified fic\'s relationships list.'
 
   static flags = {
     help: flags.help({char: 'h'}),

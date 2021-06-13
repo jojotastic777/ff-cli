@@ -42,7 +42,7 @@ USAGE
 
 ## `ff-cli add URL`
 
-describe the command here
+Add a fic to the database.
 
 ```
 USAGE
@@ -56,7 +56,7 @@ _See code: [src/commands/add.ts](https://github.com/jojotastic777/ff-cli/blob/v0
 
 ## `ff-cli add-character [ID] [CHARACTER]`
 
-describe the command here
+Add a character to a specified fic's characters list.
 
 ```
 USAGE
@@ -70,7 +70,7 @@ _See code: [src/commands/add-character.ts](https://github.com/jojotastic777/ff-c
 
 ## `ff-cli add-fandom [ID] [FANDOM]`
 
-describe the command here
+Add a fandom to a specified fic's fandoms list.
 
 ```
 USAGE
@@ -84,7 +84,7 @@ _See code: [src/commands/add-fandom.ts](https://github.com/jojotastic777/ff-cli/
 
 ## `ff-cli add-relationship [ID] [RELATIONSHIP]`
 
-describe the command here
+Add a relationship to a specified fic's relationships list.
 
 ```
 USAGE
@@ -98,7 +98,7 @@ _See code: [src/commands/add-relationship.ts](https://github.com/jojotastic777/f
 
 ## `ff-cli add-tag [ID] [TAG]`
 
-describe the command here
+Add a tag to a specified fic's tags list.
 
 ```
 USAGE
@@ -112,7 +112,7 @@ _See code: [src/commands/add-tag.ts](https://github.com/jojotastic777/ff-cli/blo
 
 ## `ff-cli get ID`
 
-describe the command here
+Get a specific fic from the database by it's id.
 
 ```
 USAGE
@@ -143,7 +143,7 @@ _See code: [@oclif/plugin-help](https://github.com/oclif/plugin-help/blob/v3.2.2
 
 ## `ff-cli list PAGE`
 
-describe the command here
+List all the fics in the database. Paginated by default.
 
 ```
 USAGE
@@ -159,7 +159,7 @@ _See code: [src/commands/list.ts](https://github.com/jojotastic777/ff-cli/blob/v
 
 ## `ff-cli rm ID`
 
-describe the command here
+Remove a specific fic from the database by it's id.
 
 ```
 USAGE
@@ -189,7 +189,7 @@ _See code: [src/commands/search.ts](https://github.com/jojotastic777/ff-cli/blob
 
 ## `ff-cli set-rating [ID] [RATING]`
 
-describe the command here
+Set a fic's rating.
 
 ```
 USAGE
