@@ -38,6 +38,7 @@ USAGE
 * [`ff-cli list PAGE`](#ff-cli-list-page)
 * [`ff-cli rm ID`](#ff-cli-rm-id)
 * [`ff-cli search [QUERY] [PAGE]`](#ff-cli-search-query-page)
+* [`ff-cli set-rating [ID] [RATING]`](#ff-cli-set-rating-id-rating)
 
 ## `ff-cli add URL`
 
@@ -185,4 +186,18 @@ OPTIONS
 ```
 
 _See code: [src/commands/search.ts](https://github.com/jojotastic777/ff-cli/blob/v0.1.0/src/commands/search.ts)_
+
+## `ff-cli set-rating [ID] [RATING]`
+
+describe the command here
+
+```
+USAGE
+  $ ff-cli set-rating [ID] [RATING]
+
+OPTIONS
+  -h, --help  show CLI help
+```
+
+_See code: [src/commands/set-rating.ts](https://github.com/jojotastic777/ff-cli/blob/v0.1.0/src/commands/set-rating.ts)_
 <!-- commandsstop -->
