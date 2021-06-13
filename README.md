@@ -37,6 +37,10 @@ USAGE
 * [`ff-cli help [COMMAND]`](#ff-cli-help-command)
 * [`ff-cli list PAGE`](#ff-cli-list-page)
 * [`ff-cli rm ID`](#ff-cli-rm-id)
+* [`ff-cli rm-character [ID] [CHARACTER]`](#ff-cli-rm-character-id-character)
+* [`ff-cli rm-fandom [ID] [FANDOM]`](#ff-cli-rm-fandom-id-fandom)
+* [`ff-cli rm-relationship [ID] [RELATIONSHIP]`](#ff-cli-rm-relationship-id-relationship)
+* [`ff-cli rm-tag [ID] [TAG]`](#ff-cli-rm-tag-id-tag)
 * [`ff-cli search [QUERY] [PAGE]`](#ff-cli-search-query-page)
 * [`ff-cli set-rating [ID] [RATING]`](#ff-cli-set-rating-id-rating)
 
@@ -170,6 +174,62 @@ OPTIONS
 ```
 
 _See code: [src/commands/rm.ts](https://github.com/jojotastic777/ff-cli/blob/v0.1.0/src/commands/rm.ts)_
+
+## `ff-cli rm-character [ID] [CHARACTER]`
+
+Remove a character from a specified fic's characters list.
+
+```
+USAGE
+  $ ff-cli rm-character [ID] [CHARACTER]
+
+OPTIONS
+  -h, --help  show CLI help
+```
+
+_See code: [src/commands/rm-character.ts](https://github.com/jojotastic777/ff-cli/blob/v0.1.0/src/commands/rm-character.ts)_
+
+## `ff-cli rm-fandom [ID] [FANDOM]`
+
+Remove a fandom from a specified fic's fandoms list.
+
+```
+USAGE
+  $ ff-cli rm-fandom [ID] [FANDOM]
+
+OPTIONS
+  -h, --help  show CLI help
+```
+
+_See code: [src/commands/rm-fandom.ts](https://github.com/jojotastic777/ff-cli/blob/v0.1.0/src/commands/rm-fandom.ts)_
+
+## `ff-cli rm-relationship [ID] [RELATIONSHIP]`
+
+Remove a relationship from a specified fic's relationships list.
+
+```
+USAGE
+  $ ff-cli rm-relationship [ID] [RELATIONSHIP]
+
+OPTIONS
+  -h, --help  show CLI help
+```
+
+_See code: [src/commands/rm-relationship.ts](https://github.com/jojotastic777/ff-cli/blob/v0.1.0/src/commands/rm-relationship.ts)_
+
+## `ff-cli rm-tag [ID] [TAG]`
+
+Remove a tag from a specified fic's tags list.
+
+```
+USAGE
+  $ ff-cli rm-tag [ID] [TAG]
+
+OPTIONS
+  -h, --help  show CLI help
+```
+
+_See code: [src/commands/rm-tag.ts](https://github.com/jojotastic777/ff-cli/blob/v0.1.0/src/commands/rm-tag.ts)_
 
 ## `ff-cli search [QUERY] [PAGE]`
 
