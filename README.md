@@ -30,6 +30,7 @@ USAGE
 <!-- commands -->
 * [`ff-cli add URL`](#ff-cli-add-url)
 * [`ff-cli add-character [ID] [CHARACTER]`](#ff-cli-add-character-id-character)
+* [`ff-cli add-fandom [ID] [FANDOM]`](#ff-cli-add-fandom-id-fandom)
 * [`ff-cli add-relationship [ID] [RELATIONSHIP]`](#ff-cli-add-relationship-id-relationship)
 * [`ff-cli add-tag [ID] [TAG]`](#ff-cli-add-tag-id-tag)
 * [`ff-cli get ID`](#ff-cli-get-id)
@@ -65,6 +66,20 @@ OPTIONS
 ```
 
 _See code: [src/commands/add-character.ts](https://github.com/jojotastic777/ff-cli/blob/v0.1.0/src/commands/add-character.ts)_
+
+## `ff-cli add-fandom [ID] [FANDOM]`
+
+describe the command here
+
+```
+USAGE
+  $ ff-cli add-fandom [ID] [FANDOM]
+
+OPTIONS
+  -h, --help  show CLI help
+```
+
+_See code: [src/commands/add-fandom.ts](https://github.com/jojotastic777/ff-cli/blob/v0.1.0/src/commands/add-fandom.ts)_
 
 ## `ff-cli add-relationship [ID] [RELATIONSHIP]`
 
