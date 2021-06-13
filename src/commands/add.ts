@@ -7,7 +7,7 @@ import renderFictionEntry from '../renderFictionEntry'
 import Ao3 from '../scrapers/ao3'
 
 export default class Add extends Base {
-  static description = 'describe the command here'
+  static description = 'Add a fic to the database.'
 
   static flags = {
     help: flags.help({char: 'h'})

@@ -39,7 +39,7 @@ export default class Ao3 implements Scraper {
         return {
             title,
             author,
-            fandom: fandom,
+            fandoms: fandom,
             rating,
             characters,
             relationships,
