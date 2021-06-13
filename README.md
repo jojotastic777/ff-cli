@@ -29,11 +29,12 @@ USAGE
 # Commands
 <!-- commands -->
 * [`ff-cli add URL`](#ff-cli-add-url)
+* [`ff-cli add-tag [ID] [TAG]`](#ff-cli-add-tag-id-tag)
 * [`ff-cli get ID`](#ff-cli-get-id)
 * [`ff-cli help [COMMAND]`](#ff-cli-help-command)
 * [`ff-cli list PAGE`](#ff-cli-list-page)
 * [`ff-cli rm ID`](#ff-cli-rm-id)
-* [`ff-cli search [FILE]`](#ff-cli-search-file)
+* [`ff-cli search [QUERY] [PAGE]`](#ff-cli-search-query-page)
 
 ## `ff-cli add URL`
 
@@ -48,6 +49,20 @@ OPTIONS
 ```
 
 _See code: [src/commands/add.ts](https://github.com/jojotastic777/ff-cli/blob/v0.1.0/src/commands/add.ts)_
+
+## `ff-cli add-tag [ID] [TAG]`
+
+describe the command here
+
+```
+USAGE
+  $ ff-cli add-tag [ID] [TAG]
+
+OPTIONS
+  -h, --help  show CLI help
+```
+
+_See code: [src/commands/add-tag.ts](https://github.com/jojotastic777/ff-cli/blob/v0.1.0/src/commands/add-tag.ts)_
 
 ## `ff-cli get ID`
 
@@ -112,14 +127,16 @@ _See code: [src/commands/rm.ts](https://github.com/jojotastic777/ff-cli/blob/v0.
 
 ## `ff-cli search [QUERY] [PAGE]`
 
-describe the command here
+Search the database using a mongodb query. Available keys: _id, title, author, fandoms, rating, characters, relationships, tags, wordcount, published, updated, complete, sources
 
 ```
 USAGE
   $ ff-cli search [QUERY] [PAGE]
 
 OPTIONS
-  -h, --help       show CLI help
+  -h, --help           show CLI help
+  --noPage             If set, disables pagination. May cause performance issues.
+  --pageSize=pageSize  [default: 20]
 ```
 
 _See code: [src/commands/search.ts](https://github.com/jojotastic777/ff-cli/blob/v0.1.0/src/commands/search.ts)_
