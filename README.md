@@ -1,7 +1,7 @@
 ff-cli
 ======
 
-Fanfiction Database CLI
+Fanfiction Database CLI (NOTE: Only works on archiveofourown fics for right now. Passing in any other kind of link *will* break the program.)
 
 [![oclif](https://img.shields.io/badge/cli-oclif-brightgreen.svg)](https://oclif.io)
 [![Version](https://img.shields.io/npm/v/ff-cli.svg)](https://npmjs.org/package/ff-cli)
