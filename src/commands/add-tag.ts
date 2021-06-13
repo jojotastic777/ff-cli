@@ -18,7 +18,6 @@ export default class AddTag extends Base {
     const db = client.db(this.userConfig.dbName).collection(this.userConfig.collName)
 
     let results = await db.updateOne({ _id: new ObjectID(args.id) }, { $push: { tags: args.tag } })
-    console.log(results)
 
     if (results.modifiedCount > 0) {
         this.log(chalk`{whiteBright ${args.id}} {dim was successfully updated.}`)
