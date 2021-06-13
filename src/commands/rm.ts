@@ -17,9 +17,9 @@ export default class Rm extends Base {
     const client = await new MongoClient(this.userConfig.url, { useUnifiedTopology: true }).connect()
     const db = client.db(this.userConfig.dbName).collection(this.userConfig.collName)
 
-    let results = await db.remove({ _id: new ObjectID(args.id) })
+    let results = await db.deleteMany([{ _id: new ObjectID(args.id) }])
 
-    if (results.result.n > 0) {
+    if ((results.result.n ?? 0) > 0) {
         this.log(chalk`{whiteBright ${args.id}} {dim has been removed from the database successfully.}`)
     } else {
         this.log(chalk`{dim No fic with id} {whiteBright ${args.id}} {dim was found.}`)
