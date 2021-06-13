@@ -22,7 +22,7 @@ export default function renderFictionEntry(fic: FictionEntryDatabase): string {
     return [
         chalk`{dim >} ${chalk.whiteBright(fic.title)} {dim by:} ${chalk.whiteBright(fic.author)} {dim (ID: ${fic._id ?? "test"})}`,
         `    ${chalk.dim("Rating:")} ${chalk.whiteBright(fic.rating)}`,
-        `    ${chalk.dim("Fandom:")} ${fic.fandom.map(a => chalk.whiteBright(a)).join(chalk.dim(", "))}`,
+        `    ${chalk.dim("Fandom:")} ${fic.fandoms.map(a => chalk.whiteBright(a)).join(chalk.dim(", "))}`,
         `    ${chalk.dim("Relationships:")} ${fic.relationships.map(a => chalk.whiteBright(a.join("/"))).join(chalk.dim(", "))}`,
         `    ${chalk.dim("Characters:")} ${fic.characters.map(a => chalk.whiteBright(a)).join(chalk.dim(", "))}`,
         `    ${chalk.dim("Tags:")} ${fic.tags.map(a => chalk.whiteBright(a)).join(chalk.dim(", "))}`,

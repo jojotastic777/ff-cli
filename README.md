@@ -15,7 +15,7 @@ Fanfiction Database CLI
 # Usage
 <!-- usage -->
 ```sh-session
-$ npm install -g
+$ npm install -g ff-cli
 $ ff-cli COMMAND
 running command...
 $ ff-cli (-v|--version|version)
@@ -29,10 +29,11 @@ USAGE
 # Commands
 <!-- commands -->
 * [`ff-cli add URL`](#ff-cli-add-url)
-* [`ff-cli get [FILE]`](#ff-cli-get-file)
+* [`ff-cli get ID`](#ff-cli-get-id)
 * [`ff-cli help [COMMAND]`](#ff-cli-help-command)
 * [`ff-cli list PAGE`](#ff-cli-list-page)
 * [`ff-cli rm ID`](#ff-cli-rm-id)
+* [`ff-cli search [FILE]`](#ff-cli-search-file)
 
 ## `ff-cli add URL`
 
@@ -48,18 +49,16 @@ OPTIONS
 
 _See code: [src/commands/add.ts](https://github.com/jojotastic777/ff-cli/blob/v0.1.0/src/commands/add.ts)_
 
-## `ff-cli get [FILE]`
+## `ff-cli get ID`
 
 describe the command here
 
 ```
 USAGE
-  $ ff-cli get [FILE]
+  $ ff-cli get ID
 
 OPTIONS
-  -f, --force
-  -h, --help       show CLI help
-  -n, --name=name  name to print
+  -h, --help  show CLI help
 ```
 
 _See code: [src/commands/get.ts](https://github.com/jojotastic777/ff-cli/blob/v0.1.0/src/commands/get.ts)_
@@ -110,4 +109,20 @@ OPTIONS
 ```
 
 _See code: [src/commands/rm.ts](https://github.com/jojotastic777/ff-cli/blob/v0.1.0/src/commands/rm.ts)_
+
+## `ff-cli search [FILE]`
+
+describe the command here
+
+```
+USAGE
+  $ ff-cli search [FILE]
+
+OPTIONS
+  -f, --force
+  -h, --help       show CLI help
+  -n, --name=name  name to print
+```
+
+_See code: [src/commands/search.ts](https://github.com/jojotastic777/ff-cli/blob/v0.1.0/src/commands/search.ts)_
 <!-- commandsstop -->

@@ -3,7 +3,7 @@ import { FictionEntry } from "./FictionEntry";
 let dummyEntry: FictionEntry = {
     title: "",
     author: "",
-    fandom: [],
+    fandoms: [],
     rating: "",
     characters: [],
     relationships: [],
