@@ -15,7 +15,7 @@ Fanfiction Database CLI
 # Usage
 <!-- usage -->
 ```sh-session
-$ npm install -g ff-cli
+$ npm install -g
 $ ff-cli COMMAND
 running command...
 $ ff-cli (-v|--version|version)
