@@ -33,6 +33,8 @@ USAGE
 * [`ff-cli add-fandom [ID] [FANDOM]`](#ff-cli-add-fandom-id-fandom)
 * [`ff-cli add-relationship [ID] [RELATIONSHIP]`](#ff-cli-add-relationship-id-relationship)
 * [`ff-cli add-tag [ID] [TAG]`](#ff-cli-add-tag-id-tag)
+* [`ff-cli config-get [KEY]`](#ff-cli-config-get-key)
+* [`ff-cli config-set KEY VALUE`](#ff-cli-config-set-key-value)
 * [`ff-cli get ID`](#ff-cli-get-id)
 * [`ff-cli help [COMMAND]`](#ff-cli-help-command)
 * [`ff-cli list PAGE`](#ff-cli-list-page)
@@ -113,6 +115,34 @@ OPTIONS
 ```
 
 _See code: [src/commands/add-tag.ts](https://github.com/jojotastic777/ff-cli/blob/v0.1.0/src/commands/add-tag.ts)_
+
+## `ff-cli config-get [KEY]`
+
+Read the program configuration.
+
+```
+USAGE
+  $ ff-cli config-get [KEY]
+
+OPTIONS
+  -h, --help  show CLI help
+```
+
+_See code: [src/commands/config-get.ts](https://github.com/jojotastic777/ff-cli/blob/v0.1.0/src/commands/config-get.ts)_
+
+## `ff-cli config-set KEY VALUE`
+
+Set the program configuration.
+
+```
+USAGE
+  $ ff-cli config-set KEY VALUE
+
+OPTIONS
+  -h, --help  show CLI help
+```
+
+_See code: [src/commands/config-set.ts](https://github.com/jojotastic777/ff-cli/blob/v0.1.0/src/commands/config-set.ts)_
 
 ## `ff-cli get ID`
 
