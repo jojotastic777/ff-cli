@@ -18,6 +18,10 @@ function renderDate(date: Date): string {
     return `${date.getFullYear()}-${date.getMonth().toString().padStart(2, "0")}-${date.getDay().toString().padStart(2, "0")}`
 }
 
+function renderBigNumber(num: number): string {
+    return num.toString().match(/\d{1,3}/g)?.join(",") ?? "ERROR"
+}
+
 export default function renderFictionEntry(fic: FictionEntryDatabase): string {
     return [
         chalk`{dim >} ${chalk.whiteBright(fic.title)} {dim by:} ${chalk.whiteBright(fic.author)} {dim (ID: ${fic._id ?? "test"})}`,
@@ -26,7 +30,7 @@ export default function renderFictionEntry(fic: FictionEntryDatabase): string {
         `    ${chalk.dim("Relationships:")} ${fic.relationships.map(a => chalk.whiteBright(a.join("/"))).join(chalk.dim(", "))}`,
         `    ${chalk.dim("Characters:")} ${fic.characters.map(a => chalk.whiteBright(a)).join(chalk.dim(", "))}`,
         `    ${chalk.dim("Tags:")} ${fic.tags.map(a => chalk.whiteBright(a)).join(chalk.dim(", "))}`,
-        chalk`    {dim Words:} {whiteBright ${fic.wordcount}} {dim Published:} {whiteBright ${renderDate(fic.published)}} {dim Updated:} {whiteBright ${renderDate(fic.updated)}} {dim Status:} ${checkFicAlive(fic)}`,
+        chalk`    {dim Words:} {whiteBright ${renderBigNumber(fic.wordcount)}} {dim Published:} {whiteBright ${renderDate(fic.published)}} {dim Updated:} {whiteBright ${renderDate(fic.updated)}} {dim Status:} ${checkFicAlive(fic)}`,
         `    ${chalk.dim("Links:")} ${fic.sources.map((e, i) => i === 0 ? chalk.blueBright(e) : `           ${chalk.blueBright(e)}`).join("\n")}`
     ].join("\n")
 }
